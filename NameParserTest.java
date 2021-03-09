@@ -7,7 +7,7 @@ class NameParserTest {
     }
 }
 
-public class NameParser {
+class NameParser {
     public String parse(String[] names) {
         StringBuilder result = new StringBuilder();
 
