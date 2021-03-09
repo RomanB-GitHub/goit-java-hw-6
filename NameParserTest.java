@@ -1,3 +1,12 @@
+class NameParserTest {
+    public static void main(String[] args) {
+        String[] names = {"John Doe", "Bill Mask", "Nigua Joshua"};
+
+        //John, Bill, Nigua
+        System.out.println(new NameParser().parse(names));
+    }
+}
+
 public class NameParser {
     public String parse(String[] names) {
         StringBuilder result = new StringBuilder();
@@ -13,14 +22,5 @@ public class NameParser {
         String str = result.toString();
 
         return str;
-    }
-}
-
-class NameParserTest {
-    public static void main(String[] args) {
-        String[] names = {"John Doe", "Bill Mask", "Nigua Joshua"};
-
-        //John, Bill, Nigua
-        System.out.println(new NameParser().parse(names));
     }
 }
